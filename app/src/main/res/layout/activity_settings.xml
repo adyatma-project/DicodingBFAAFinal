@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This App Created By ADYATMA LAKATJINDA To Dicoding Indonesia -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/system_ui_scrim_dark"
+
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvreminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:text="@string/reminder_pada_pukul_09_00_pagi"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+    <TextView
+        android:id="@+id/tvbahasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingin_mengubah_bahasa"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvreminder"
+        app:layout_constraintStart_toStartOf="@id/tvreminder"
+        android:layout_marginTop="46dp"/>
+
+
+    <Button
+        android:id="@+id/btnbahasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ubah_bahasa"
+        app:layout_constraintTop_toTopOf="@id/tvbahasa"
+        app:layout_constraintStart_toEndOf="@id/tvbahasa"
+        app:layout_constraintBottom_toBottomOf="@id/tvbahasa"
+        android:layout_marginStart="16dp"
+        />
+
+    <Switch
+        android:id="@+id/switch_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvreminder"
+        android:layout_marginStart="50dp"
+        app:layout_constraintTop_toTopOf="@id/tvreminder"
+        app:layout_constraintBottom_toBottomOf="@id/tvreminder"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

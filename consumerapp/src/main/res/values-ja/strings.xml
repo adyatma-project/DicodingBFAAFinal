@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Consumer App</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit</string>
+    <string name="Cari">探す</string>
+    <string name="detail_title">ユーザーの詳細</string>
+    <string name="hello_blank_fragment">こんにちはフラグメントブランク</string>
+    <string name="username">ユーザー名</string>
+    <string name="cari">探す</string>
+    <string name="lang">設定</string>
+    <string name="repository">ストレージ</string>
+    <string name="follower">フォロワー</string>
+    <string name="following">従う</string>
+    <string name="_0">0</string>
+    <string name="company">会社</string>
+    <string name="pengaturan">設定</string>
+    <string name="Favorite">お気に入り</string>
+    <string name="pesan_reminder">Github BFAA Finalをもう一度開きましょう</string>
+    <string name="msg_reminder_activated">リマインダーがアクティブになりました</string>
+    <string name="msg_reminder_disabled">リマインダーが無効になりました</string>
+    <string name="menu_main_title_my_favorite">私のお気に入り</string>
+    <string name="menu_title_daily_reminder">毎日のリマインダー</string>
+    <string name="menu_title_change_language">言語を変更</string>
+    <string name="ubah_bahasa">言語を変更</string>
+    <string name="ingin_mengubah_bahasa">言語を変更したい ?</string>
+    <string name="reminder_pada_pukul_09_00_pagi">午前9時のリマインダー</string>
+</resources>

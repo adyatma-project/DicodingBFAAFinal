@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.adyatma.dicodingbfaafinal">
+    <!-- This App Created By ADYATMA LAKATJINDA To Dicoding Indonesia -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="id.adyatma.dicodingbfaafinal.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="id.adyatma.dicodingbfaafinal.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/dicoding"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/dicoding"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity android:name=".view.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".provier.MyContentProvider"
+            android:authorities="id.adyatma.dicodingbfaafinal"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="id.adyatma.dicodingbfaafinal.READ_DATABASE"
+            android:writePermission="id.adyatma.dicodingbfaafinalr.WRITE_DATABASE" />
+
+        <activity
+            android:name=".view.SettingsActivity"
+            android:parentActivityName=".view.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.adyatma.dicodingbfaafinal.view.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.FavoriteActivity"
+            android:parentActivityName=".view.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.adyatma.dicodingbfaafinal.view.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.DetailActivity"
+            android:parentActivityName=".view.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.adyatma.dicodingbfaafinal.view.MainActivity" />
+        </activity>
+        <activity android:name=".view.MainActivity">
+        </activity>
+
+        <receiver
+            android:name=".ReminderReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="ExportedReceiver" />
+    </application>
+
+</manifest>

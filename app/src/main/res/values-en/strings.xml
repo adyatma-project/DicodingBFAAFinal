@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Github BFAA Final</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit</string>
+    <string name="Cari">Find</string>
+    <string name="detail_title">User Details</string>
+    <string name="username">Username</string>
+    <string name="cari">Find</string>
+    <string name="lang">Setting</string>
+    <string name="repository">Repository</string>
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
+    <string name="_0">0</string>
+    <string name="company">Company</string>
+    <string name="pengaturan">Setting</string>
+    <string name="Favorite">Favorite</string>
+    <string name="pesan_reminder">Come On Open Github BFAA Final Again</string>
+    <string name="msg_reminder_activated">Reminder Has Been Activated</string>
+    <string name="msg_reminder_disabled">Reminder Has Been Non Activated</string>
+    <string name="ubah_bahasa">Change Language</string>
+    <string name="ingin_mengubah_bahasa">Want to Change Language ?</string>
+    <string name="reminder_pada_pukul_09_00_pagi">Reminder at 09.00 AM</string>
+    <string name="daftar_favorite_kosong">List Favorite Is Empty</string>
+</resources>
